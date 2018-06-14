@@ -13,10 +13,10 @@ public:
     graph_t(unsigned N)
     {
         count_of_verticals = N;
-        data = new bool * [count_of_verticals];
+        data = new std::vector<bool> * [count_of_verticals];
         for (std::size_t i = 0; i < count_of_verticals; ++i)
         {
-            data[i] = new bool [count_of_verticals];
+            data[i] = new std::vector<bool> [count_of_verticals];
         }
     }
 
