@@ -8,15 +8,15 @@ class graph_t
 {
 private:
     unsigned count_of_verticals;
-    std::vector<std::vector<bool>> data;
+    bool ** data;
 public:
     graph_t(unsigned N)
     {
         count_of_verticals = N;
-        data = new vector<std::vector<bool>> * [count_of_verticals];
+        data = new bool * [count_of_verticals];
         for (std::size_t i = 0; i < count_of_verticals; ++i)
         {
-            data[i] = new vector<std::vector<bool>> [count_of_verticals];
+            data[i] = new bool [count_of_verticals];
         }
     }
 
