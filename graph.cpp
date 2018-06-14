@@ -8,7 +8,7 @@ class graph_t
 {
 private:
     unsigned count_of_verticals;
-    bool ** data -> std::vector<std::vector<bool>>;
+    std::vector<std::vector<bool>> data;
 public:
     graph_t(unsigned N)
     {
